@@ -1,1 +1,45 @@
-<p>areachange works!</p>
+<div class="container">
+  <h1>{{title}}</h1>
+  1平方公尺 = 0.3025坪
+  1坪 = 3.3058平方公尺
+  1公頃 = 10000平方公尺 = 3025坪 = 1.03102甲
+  1甲 = 10分 = 2934坪 = 0.96992公頃
+  1平方公里 = 100公頃
+
+ *** {{ message }} ***
+  <div class="form-group">
+    <label for="name">平方公尺：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[0]" (keyup)="onKeyup($event, 0)">
+  </div>
+  <div class="form-group">
+    <label for="name">坪：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[1]" (keyup)="onKeyup($event, 1)">
+  </div>
+  <div class="form-group">
+    <label for="name">公頃：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[2]" (keyup)="onKeyup($event, 2)">
+  </div>
+  <div class="form-group">
+    <label for="name">甲：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[3]" (keyup)="onKeyup($event, 3)">
+  </div>
+  <div class="form-group">
+    <label for="name">分：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[4]" (keyup)="onKeyup($event, 4)">
+  </div>
+  <div class="form-group">
+    <label for="name">公畝：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[5]" (keyup)="onKeyup($event, 5)">
+  </div>
+  <div class="form-group">
+    <label for="name">英畝：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[6]" (keyup)="onKeyup($event, 6)">
+  </div>
+  <div class="form-group">
+    <label for="name">市畝：</label>
+    <input type="number" class="form-control" [(ngModel)]="areas[7]" (keyup)="onKeyup($event, 7)">
+  </div>
+
+
+
+</div>
